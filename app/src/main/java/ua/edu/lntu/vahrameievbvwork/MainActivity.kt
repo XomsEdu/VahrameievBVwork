@@ -29,18 +29,11 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+data class CookingDay(
+    val dayNumber: Int,
+    val title: String,
+    val pictureResId: Int,
+    val description: String
+)
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    VahrameievBVworkTheme {
-        Greeting("Android")
-    }
-}
+
